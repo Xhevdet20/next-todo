@@ -1,17 +1,12 @@
 import Body from '@/components/Body'
 import Header from '@/components/Header/Header'
-import { Inter } from 'next/font/google'
+import { ToDo } from '@/utils/types';
 import { useState } from 'react'
 import style from '../styles/Home.module.scss'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
 
-
-  const [list, setList] = useState<string[]>([]);
-
-  // setList(['12', '234'])
+  const [list, setList] = useState<ToDo[]>([]);
 
   return (
     <div className={style.container}>

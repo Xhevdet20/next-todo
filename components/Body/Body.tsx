@@ -1,10 +1,11 @@
 import { Dispatch, SetStateAction } from "react";
 import List from "../List";
+import { ToDo } from '@/utils/types';
 import styles from "./Body.module.scss";
 
 interface Props {
-  list: string[];
-  setList: Dispatch<SetStateAction<string[]>>;
+  list: ToDo[];
+  setList: Dispatch<SetStateAction<ToDo[]>>;
 }
 
  const Body: React.FC<Props> = ({ list, setList }) => {

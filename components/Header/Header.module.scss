@@ -19,6 +19,7 @@
     align-items: center;
 
     input {
+      padding-left: 10px;
       border: none;
       height: 32px;
       font-size: 13px;
@@ -32,8 +33,11 @@
       box-shadow: 0px 4px 4px 0px #00000040;
     }
 
+    input:focus {
+      outline: none;
+    }
+
     ::placeholder {
-      padding: 10px;
       color: #7B7B7B;
       opacity: 1; /* Firefox */
     }
@@ -46,6 +50,18 @@
       width: 40px;
       font-size: 25px;
       border: 1px solid #AAAAAA;
+      border-radius:  0px 4px 4px 0px;
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    button:active {
+      background-color: #969393;
+      color: #e9e6e6;
+      height: 32px;
+      border: none;
+      width: 40px;
+      font-size: 25px;
+      border: 1px solid #969393;
       border-radius:  0px 4px 4px 0px;
       box-shadow: 0px 4px 4px 0px #00000040;
     }
